@@ -1,0 +1,38 @@
+.header
+    background: #333
+    background-image: url('./../img/bg.jpg')
+    background-size: cover
+
+    // Proportion
+    aspect-ratio: 1920 / 811
+
+    @media (-webkit-min-device-pixel-ration: 2), (min-resolution: 192dpi)
+        background-image: url('./../img/bg@2x.jpg')
+
+.header-content
+    margin-top: 105px
+    display: grid
+    grid-template-columns: 4fr 2fr
+
+.header-caption
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.header__title
+    font-size: 64px
+    font-weight: 900
+    color: #FFF
+    max-width: 764px
+    text-transform: uppercase
+
+.header__description
+    font-size: 28px
+    font-weight: 400
+    color: #FFF
+    max-width: 629px
+
+.header__swiper
+    position: relative
+    height: 406px
+    margin-bottom: 77px

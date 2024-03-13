@@ -1,0 +1,23 @@
+.nav-menu
+    display: flex
+    align-items: center
+    gap: 12px
+    grid-column: 1
+
+.nav-submenu
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 5
+    border: 1px solid #FFF
+    background: #333
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 16px
+    transform-origin: 0 0
+    transform: rotateX(-90deg)
+    transition: .3s linear
+
+    &.active
+        transform: rotateX(0)

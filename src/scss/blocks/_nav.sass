@@ -1,0 +1,52 @@
+.nav
+    color: #FFF
+    a
+        color: #FFF
+
+.nav-top
+    padding-top: 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.nav-top__item
+    display: flex
+    gap: 60px
+
+.nav-mid
+    padding: 34px 0
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    align-items: center
+
+.nav-mid__menu
+    display: flex
+    flex-direction: column
+    position: relative
+
+.nav-mid__logo
+    grid-column-start: 3
+    grid-column-end: 5
+    justify-self: center
+    max-width: 272px
+
+.nav-mid__utils
+    display: flex
+    align-items: center
+    gap: 24px
+    grid-column: 6
+
+.nav-bottom
+    margin-bottom: 16px
+
+.nav-list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 16px
+
+.nav-item--submenu
+    position: relative
+
+.nav-item--submenu:hover > .dropmenu
+    transform: rotate(0)

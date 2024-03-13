@@ -1,0 +1,56 @@
+.offices-list
+    display: flex
+    gap: 16px
+    justify-content: space-between
+
+.office-item
+    position: relative
+    padding: 20px 0px 20px 30px
+    transition: .3s linear
+    width: 306px
+
+.office-item__title
+    font-size: 16px
+    font-weight: 600
+
+.office-item:hover
+    background: #FFF
+
+.office-item:hover > .office-item__info
+    transform: rotateX(0)
+    background-color: #fff
+
+.office-item__title
+    display: flex
+    align-items: center
+    gap: 10px
+
+.office-item__info
+    position: absolute
+    padding: 20px 30px
+    top: 100%
+    left: 0
+    z-index: 5
+    display: flex
+    flex-direction: column
+    background-color: transparent
+    transform-origin: 0 0
+    transform: rotateX(-90deg)
+    transition: .3s linear
+    max-width: 306px
+
+    span
+        font-size: 16px
+        color: #666565
+
+.office-info__contacts
+    margin-top: 35px
+    display: flex
+    flex-direction: column
+    gap: 18px
+    font-size: 16px
+    a
+        display: flex
+        align-items: center
+        gap: 16px
+        color: #666565
