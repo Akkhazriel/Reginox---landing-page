@@ -1,0 +1,63 @@
+.popular-card
+    display: flex
+    flex-direction: column
+    width: 383px
+    height: 440px
+
+.popular-card__main
+    display: flex
+    flex-direction: column
+    gap: 77px
+    background: #ECECEC
+    padding: 58px 20px 37px 20px
+    transition: transform .3s ease
+
+    img
+        width: 100%
+        height: 100%
+        mix-blend-mode: darken
+
+.popular-card__img
+    width: 342px
+    height: 209px
+
+
+.popular-card__info
+    display: flex
+    flex-direction: column
+    gap: 6px
+
+.popular-card-info__title
+    font-size: 18px
+    font-weight: 800
+    color: #333
+
+.popular-card-info__price
+    display: flex
+    gap: 3px
+    font-size: 20px
+    font-weight: 400
+    color: #333
+
+    &::after
+        content: attr(data-value)
+
+        font-size: 20px
+        font-weight: 400
+
+.popular-card:hover > .popular-card__link
+    transform: translateY(-20px)
+    opacity: 1
+
+.popular-card:hover > .popular-card__main
+    transform: translateY(-20px)
+
+.popular-card__link
+    background: #AD2131
+    color: #fff
+    display: flex
+    align-items: center
+    padding: 24px 37px
+    gap: 16px
+    opacity: 0
+    transition: all .3s ease
