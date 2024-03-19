@@ -1,0 +1,71 @@
+.link-list
+    margin-bottom: 66px
+
+.link-list__content
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    transition: .3s linear
+
+    &.active
+        margin-bottom: 500px
+        transition: .3s linear
+
+.link-list__section
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 34px
+    transition: .3s linear
+
+.link-list__section--about
+    grid-column-start: 1
+    grid-column-end: 3
+
+.link-list__section--catalog
+    grid-column-start: 3
+    grid-column-end: 4
+
+.link-list__section--brands
+    grid-column-start: 5
+    grid-column-end: 6
+
+.link-list__button
+    position: relative
+    font-size: 24px
+    font-weight: 700
+    color: #333
+    display: flex
+    align-items: center
+    gap: 8px
+
+    img
+        transition: .3s linear
+
+    &.active
+
+        img
+            transform: rotate(-180deg)
+            transition: .3s linear
+
+.link-list__nav
+    position: absolute
+    top: 200%
+    left: 0
+    display: flex
+    flex-direction: column
+    gap: 24px
+    transform-origin: 0 0
+    transform: rotateX(90deg)
+    transition: .3s linear
+    opacity: 0
+
+    &.active
+        transform: rotateX(0deg)
+        opacity: 1
+        transition: .3s linear
+
+.link-list__link
+    font-size: 16px
+    font-weight: 500
+    color: #666565
