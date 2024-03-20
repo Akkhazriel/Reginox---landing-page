@@ -14,6 +14,9 @@
     display: grid
     grid-template-columns: 4fr 2fr
 
+    @media (max-width: 499px)
+        grid-template-column: 1fr
+
 .header-caption
     display: flex
     flex-direction: column
@@ -26,11 +29,30 @@
     max-width: 764px
     text-transform: uppercase
 
+    @media (max-width: 999px)
+        font-size: 56px
+
+    @media (max-width: 699px)
+        font-size: 36px
+
+    @media (max-width: 499px)
+        width: 300px
+
 .header__description
     font-size: 28px
     font-weight: 400
     color: #FFF
     max-width: 629px
+
+    @media (max-width: 999px)
+        font-size: 22px
+        max-width: 480px
+
+    @media (max-width: 699px)
+        font-size: 18px
+
+    @media (max-width: 499px)
+        max-width: 400px
 
 .header__swiper
     position: relative
