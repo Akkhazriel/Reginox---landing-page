@@ -1,0 +1,63 @@
+.nav-mobile
+    display: none
+    padding-top: 20px
+    // display: flex
+    // flex-direction: column
+    gap: 20px
+    @media (max-width: 999px)
+        display: block
+
+.nav-mobile__top
+    display: flex
+    justify-content: space-between
+    span
+        color: #FFF
+        font-size: 16px
+        font-weight: 500
+
+    .nav__feedback
+        font-size: 16px
+        font-weight: 500
+        color: #FFF
+
+.nav-mobile__mid
+    text-align: center
+
+.nav-mobile__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.nav-mobile__menu
+    display: flex
+    flex-direction: column
+    position: relative
+
+.nav-mobile__submenu
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 5
+    border: 1px solid #FFF
+    background: #333
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 16px
+    transform-origin: 0 0
+    transform: rotateX(-90deg)
+    transition: .3s linear
+
+    &.active
+        transform: rotateX(0)
+
+.nav-mobile-submenu__link
+    color: #FFF
+
+.nav__phone
+    color: #FFF
+    font-weight: 500
+
+.nav-mobile__utils
+    display: flex
+    gap: 26px
