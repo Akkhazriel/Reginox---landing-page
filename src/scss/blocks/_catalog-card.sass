@@ -2,6 +2,8 @@
     display: flex
     flex-direction: column
     width: 383px
+    @media (max-width: 399px)
+        width: 240px
 
 .catalog-card__main
     position: relative
@@ -21,6 +23,13 @@
         text-align: center
         width: 298px
 
+        @media (max-width: 399px)
+            font-size: 14px
+
+    @media (max-width: 399px)
+        width: 240px
+        height: 340px
+
 .catalog-card:hover > .catalog-card__link
     transform: translateY(-70px)
     opacity: 1
@@ -37,3 +46,6 @@
     gap: 16px
     opacity: 0
     transition: all .3s ease
+
+    @media (max-width: 399px)
+        display: inline-flex
